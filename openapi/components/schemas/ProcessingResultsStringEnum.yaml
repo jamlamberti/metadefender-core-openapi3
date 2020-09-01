@@ -18,6 +18,7 @@ description: >
   Progress                  | 255           |
 type: string
 enum:
+  - No Threat Detected
   - Threat Detected
   - Infected
   - Suspicious
