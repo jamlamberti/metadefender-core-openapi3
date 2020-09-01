@@ -218,6 +218,8 @@ paths:
     $ref: 'paths/file@batch@{batchId}.yaml'
   '/file/batch/{batchId}/certificate':
     $ref: 'paths/file@batch@{batchId}@certificate.yaml'
+  'hash/{file_hash}.yaml':
+    $ref: 'paths/hash@{file_hash}.yaml'
   /version:
     $ref: paths/version.yaml
   /stat/engines:
