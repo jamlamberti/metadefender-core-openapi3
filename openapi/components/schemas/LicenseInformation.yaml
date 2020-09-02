@@ -3,6 +3,8 @@ description: >-
   deploymentId, expiration date and days left)
 type: object
 properties:
+  activation_key:
+      type: string
   days_left:
     type: integer
     description: Number of days left before expiration
@@ -13,10 +15,16 @@ properties:
     type: string
     description: Expiration date in MM/DD/YYYY format.
   licensed_engines:
-    type: array
-    items:
-      type: string
+    type: string
     description: List of engine/module identifiers that have been licensed
+  licensed_to:
+      type: string
+  matchingLicense:
+      type: string
+  matchingMachine:
+      type: string
+  max_agent_count:
+      type: string
   max_node_count:
     type: string
     description: >-
@@ -31,6 +39,8 @@ properties:
   product_name:
     type: string
     description: Official MetaDefender base product name licensed.
+  serial:
+      type: string
 example:
   days_left: 3731
   deployment: MSCL00000000000000000000000000000000
