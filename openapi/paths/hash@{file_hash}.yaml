@@ -20,5 +20,7 @@ get:
         application/json:
           schema:
             $ref: ../components/schemas/AnalysisResult.yaml
+    '405':
+      $ref: ../components/responses/Error405.yaml
     '500':
       $ref: ../components/responses/Error500.yaml
